@@ -1,8 +1,11 @@
+[includeIf "gitdir:~/Projects/Personal/"]
+	path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/Projects/Work/"]
+	path = ~/.gitconfig-work
+
 [core]
 	editor = code --wait
-[user]
-	name =
-	email =
 [alias]
 	s = !git status -s
 	c = !git add --all && git commit -m
